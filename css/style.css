@@ -1,0 +1,255 @@
+/* Grundläggande Layout */
+*
+{
+    margin:0;
+    padding:0;
+    outline:0;
+    text-align: center;
+}
+p
+{
+    font-size: 1rem;
+    font-family:Poppins;
+    color: black;
+}
+h1
+{
+    color: #242614;    
+    text-shadow: 0.10rem 0.10rem #B4BF5E;
+    font-size: 7rem;
+    margin:1.2rem;
+    font-family: Bonheur Royale;
+}
+h2
+{
+    color: #242614;    
+    text-shadow: 0.05rem 0.05rem #B4BF5E;
+    font-size: 2.5rem;
+    margin:1.2rem;
+    font-family:Handlee;
+}
+h3
+{
+    color: #242614;    
+    text-shadow: 0.05rem 0.05rem #B4BF5E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.2rem;
+    font-family: Handlee;
+}
+hr
+{
+    border:dotted black 0.625rem;
+    border-bottom: none;
+    width: 4.5rem;
+    margin: 6.25rem auto;
+    filter: blur(0.09rem);
+}
+ul
+{    
+    list-style-type: none;
+}
+/* Grid Layout */
+.grid-container
+{   
+    min-height: 100vh;
+    background-color: #334018; 
+    display:grid;
+    grid-template-columns: auto; 
+    grid-template-rows: 1.5rem auto auto auto;
+}
+nav
+{
+    background-color: #023059;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+header
+{
+    background-color: #5D7CA6;
+    grid-row:2/3;
+    grid-column:1/3;
+}
+main
+{
+    background-color: #5D7CA6;
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.hover-img
+{
+    border: solid 0.15rem transparent;
+}
+.hover-img:hover
+{
+    border: solid 0.15rem #CAD959;
+    filter: blur(0.09rem);
+}
+.image-gallery
+{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.image-gallery_project
+{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    flex-direction: row;
+}
+.image-gallery-right-image
+{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: flex-end;
+}
+footer
+{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+/* Specifik Layout */
+nav ul
+{
+    display: flex;
+    justify-content: center;
+}
+nav li
+{    
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+nav a
+{
+    color:#CAD959;
+    text-decoration: none;
+    padding: 0.15rem 1.5rem;
+    border: solid 0.15rem transparent;
+}
+nav a:hover
+{
+    border: solid 0.15rem #CAD959;
+}
+.footertext
+{
+    color: #CAD959;
+}
+/* Sidornas Layout */
+section
+{
+    display:inline;
+}
+header
+{
+    margin-top: 6rem;
+}
+.image-gallery section
+{
+    margin:0.2rem 0.2rem 0.2rem 0.2rem;
+    padding-left: 3rem;
+}
+article
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.profilepic
+{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+}
+/* Responsive */
+@media screen and (min-width: 320px)
+{
+    .grid-container{   
+    background-color: #023059; 
+    display:grid;
+    grid-template-columns: auto; 
+    grid-template-rows: 1.5rem auto auto auto;
+}
+    p
+    {
+        font-size: .75rem;
+    }
+    h1
+    {
+        font-size: 4rem;
+    }
+    h2
+    {
+        font-size: 2.5rem;
+    }
+    h3
+    {
+        font-size: 1rem;
+    }
+    .profilepic
+    {
+        height: 250px;
+        width: 250px;
+    }
+    img
+    {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    p
+    {
+        font-size: 1rem;
+    }
+    h1
+    {
+        font-size: 7rem;
+    }
+    h2
+    {
+        font-size: 2.5rem;
+    }
+    h3
+    {
+        font-size: 1.2rem;
+    }
+    .profilepic
+    {
+        height: 300px;
+        width: 300px;
+    }
+    img
+    {
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (min-width: 1080px)
+{
+    p
+    {
+        font-size: 1rem;
+    }
+    h1
+    {
+        font-size: 7rem;
+    }
+    h2
+    {
+        font-size: 2.5rem;
+    }
+    h3
+    {
+        font-size: 1.5rem;
+    }
+    .profilepic
+    {
+        height: 400px;
+        width: 400px;
+    }
+}
